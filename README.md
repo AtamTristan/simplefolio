@@ -1,40 +1,49 @@
-# Tristan Wesendahl Velázquez — Portfolio
+# Simplefolio Portfolio
 
-Small static portfolio built with Parcel and SCSS.
+Personal software engineering portfolio of Tristan Wesendahl Velázquez.
 
-## Local development
+## Stack
+
+- Vite 8
+- Vanilla JavaScript
+- SCSS / Dart Sass
+- Multi-page static build (`index`, `imprint`, `privacy`)
+- Netlify deployment
+
+## Requirements
+
+- Node.js 20.19+ (Node 22 recommended; see `.nvmrc`)
+
+## Development
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-Parcel prints the local development URL in the terminal.
+Vite serves the site at the URL printed in the terminal, normally `http://localhost:5173`.
 
 ## Production build
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The deployable site is generated in `dist/`.
+The production output is written to `dist/`.
 
-## Netlify
+## Quality checks
 
-`netlify.toml` is included. For a Git-connected Netlify site the expected settings are:
+```bash
+npm run format:check
+npm run audit
+npm run audit:prod
+```
 
-- Build command: `npm run build`
-- Publish directory: `dist`
-- Node: 18
+## Deployment
 
-After pushing the updated repository, Netlify can deploy the new version automatically if the site is already connected to that repository.
+`netlify.toml` is configured to run `npm run build` and publish `dist/` with Node 22.
 
-## Before making the portfolio public
+## Legal / privacy
 
-Replace the remaining intentional placeholders:
-
-1. `src/assets/profile_example.jpg` with the real portrait.
-2. The three project placeholder screenshots in `src/assets/project1.png`, `project2.png`, `project3.png`.
-3. Add a real contact email and/or LinkedIn URL in `src/index.html`.
-4. Add public project links when repositories or demos are ready.
-5. Optionally connect a custom domain in Netlify after the content is final.
+See `LEGAL_PRIVACY_NOTES.md`. The current site intentionally contains no analytics or marketing trackers and therefore does not include a decorative cookie-consent banner. Fill the deployment placeholders in the imprint/privacy pages with the required real operator details before publishing the legal pages as final.

@@ -21,13 +21,20 @@
   <body>
     <header class="site-header">
       <div class="container site-header__inner">
-        <a class="brand" href="#top" aria-label="Back to top">TWV<span>.</span></a>
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#focus">Focus</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a class="brand" href="#top" aria-label="Back to top" data-i18n-aria-label="backToTopAria">TWV<span>.</span></a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="primaryNavAria">
+            <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#focus" data-i18n="navFocus">Focus</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </nav>
+          <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="languageAria">
+            <button type="button" class="language-option" data-language="en" aria-pressed="true">EN</button>
+            <button type="button" class="language-option" data-language="de" aria-pressed="false">DE</button>
+            <button type="button" class="language-option" data-language="es" aria-pressed="false">ES</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -35,17 +42,14 @@
       <section class="hero section-shell">
         <div class="container hero__grid">
           <div class="hero__content reveal">
-            <p class="eyebrow">FULL-STACK SOFTWARE ENGINEERING</p>
+            <p class="eyebrow" data-i18n="heroEyebrow">FULL-STACK SOFTWARE ENGINEERING</p>
             <h1>
               Tristan
               <span>Wesendahl Velázquez</span>
             </h1>
-            <p class="hero__lead">
-              I'm Tristan Wesendahl Velázquez, a computer science student and software engineer
-              building full-stack applications, data-driven systems and scientific software.
-            </p>
+<p class="hero__lead" data-i18n="heroLead">I'm Tristan Wesendahl Velázquez, a computer science student and software engineer building full-stack applications, data-driven systems and scientific software.</p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#projects">View selected projects</a>
+              <a class="button button--primary" href="#projects" data-i18n="heroProjects">View selected projects</a>
               <a class="button button--secondary" href="https://github.com/AtamTristan" target="_blank" rel="noreferrer">GitHub</a>
             </div>
           </div>
@@ -55,25 +59,18 @@
       <section id="about" class="section-shell section-shell--muted">
         <div class="container about-grid">
           <div class="portrait-frame reveal">
-            <img src="assets/profile.jpg" alt="Placeholder portrait for Tristan Wesendahl Velázquez" />
+            <img src="assets/profile.jpg" alt="Portrait of Tristan Wesendahl Velázquez" data-i18n-alt="portraitAlt" />
           </div>
           <div class="section-copy reveal">
-            <p class="eyebrow">ABOUT</p>
-            <h2>Full-stack engineering, with analytical depth.</h2>
-            <p>
-              I enjoy software engineering most when product thinking, architecture and analytical work meet.
-              My work spans full-stack web applications, data-heavy workflows and scientific software, with an
-              emphasis on systems that are useful, understandable and maintainable.
-            </p>
-            <p>
-              I care about building quickly without turning the codebase into a trap: clear models, pragmatic
-              architecture, reproducible workflows and visual interfaces where they genuinely improve understanding.
-            </p>
+            <p class="eyebrow" data-i18n="aboutEyebrow">ABOUT</p>
+            <h2 data-i18n="aboutTitle">Full-stack engineering, with analytical depth.</h2>
+<p data-i18n="aboutP1">I enjoy software engineering most when product thinking, architecture and analytical work meet. My work spans full-stack web applications, data-heavy workflows and scientific software, with an emphasis on systems that are useful, understandable and maintainable.</p>
+<p data-i18n="aboutP2">I care about building quickly without turning the codebase into a trap: clear models, pragmatic architecture, reproducible workflows and visual interfaces where they genuinely improve understanding.</p>
             <div class="skill-groups">
               <div><span>Frontend</span><strong>React · Next.js · TypeScript</strong></div>
-              <div><span>Backend & Data</span><strong>Node.js · Python · SQL · PostgreSQL</strong></div>
-              <div><span>Engineering</span><strong>Docker · Git · APIs · Testing</strong></div>
-              <div><span>Research</span><strong>PyTorch · scikit-learn · Data Analysis · ML</strong></div>
+              <div><span data-i18n="skillBackend">Backend & Data</span><strong>Node.js · Python · SQL · PostgreSQL</strong></div>
+              <div><span data-i18n="skillEngineering">Engineering</span><strong>Docker · Git · APIs · Testing</strong></div>
+              <div><span data-i18n="skillResearch">Research</span><strong>PyTorch · scikit-learn · Data Analysis · ML</strong></div>
             </div>
           </div>
         </div>
@@ -82,33 +79,33 @@
       <section id="projects" class="section-shell">
         <div class="container">
           <div class="section-heading reveal">
-            <p class="eyebrow">SELECTED PROJECTS</p>
-            <h2>A few systems that show what I like building.</h2>
-            <p>Selected over quantity: product-oriented full-stack engineering and polished web applications.</p>
+            <p class="eyebrow" data-i18n="projectsEyebrow">SELECTED PROJECTS</p>
+            <h2 data-i18n="projectsTitle">A few systems that show what I like building.</h2>
+            <p data-i18n="projectsIntro">Selected over quantity: product-oriented full-stack engineering and polished web applications.</p>
           </div>
 
           <div class="project-grid">
             <article class="project-card project-card--featured reveal">
               <div class="project-card__visual"><img src="assets/project1.png" alt="TalentFlow project preview placeholder" /></div>
               <div class="project-card__body">
-                <div class="project-card__header"><span class="project-index">01</span><span class="project-status">FEATURED · PRIVATE</span></div>
+                <div class="project-card__header"><span class="project-index">01</span><span class="project-status" data-i18n="talentStatus">FEATURED · PRIVATE</span></div>
                 <h3>TalentFlow</h3>
-                <p class="project-problem"><strong>Problem.</strong> Job searching quickly becomes a fragmented mix of listings, notes, application stages and subjective decisions.</p>
-                <p><strong>Built.</strong> A workflow-oriented full-stack application that brings opportunity evaluation, application tracking, triage and decision support into one coherent product.</p>
-                <p class="project-substance"><strong>Engineering.</strong> Next.js and TypeScript application architecture, persistent data workflows, reusable UI patterns and visualization-driven product UX.</p>
+                <p class="project-problem" data-i18n-html="talentProblem"><strong>Problem.</strong> Job searching quickly becomes a fragmented mix of listings, notes, application stages and subjective decisions.</p>
+                <p data-i18n-html="talentBuilt"><strong>Built.</strong> A workflow-oriented full-stack application that brings opportunity evaluation, application tracking, triage and decision support into one coherent product.</p>
+                <p class="project-substance" data-i18n-html="talentEngineering"><strong>Engineering.</strong> Next.js and TypeScript application architecture, persistent data workflows, reusable UI patterns and visualization-driven product UX.</p>
                 <div class="tags"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Product UX</span></div>
-                <div class="project-actions"><span class="project-note">Private project</span></div>
+                <div class="project-actions"><span class="project-note" data-i18n="privateProject">Private project</span></div>
               </div>
             </article>
 
             <article class="project-card reveal">
               <div class="project-card__visual"><img src="assets/project3.png" alt="Freds Futterflitzer project preview placeholder" /></div>
               <div class="project-card__body">
-                <div class="project-card__header"><span class="project-index">02</span><span class="project-status">FRONTEND PRODUCT</span></div>
+                <div class="project-card__header"><span class="project-index">02</span><span class="project-status" data-i18n="fredStatus">FRONTEND PRODUCT</span></div>
                 <h3>Freds Futterflitzer</h3>
-                <p class="project-problem"><strong>Problem.</strong> Turn a playful food-delivery concept into a clear, usable web experience rather than just a collection of screens.</p>
-                <p><strong>Built.</strong> A deployed React and TypeScript web application with a focused product flow, responsive UI and a distinct visual identity.</p>
-                <p class="project-substance"><strong>Engineering.</strong> Component-based frontend architecture, typed application code and production deployment on Netlify.</p>
+                <p class="project-problem" data-i18n-html="fredProblem"><strong>Problem.</strong> Turn a playful food-delivery concept into a clear, usable web experience rather than just a collection of screens.</p>
+                <p data-i18n-html="fredBuilt"><strong>Built.</strong> A deployed React and TypeScript web application with a focused product flow, responsive UI and a distinct visual identity.</p>
+                <p class="project-substance" data-i18n-html="fredEngineering"><strong>Engineering.</strong> Component-based frontend architecture, typed application code and production deployment on Netlify.</p>
                 <div class="tags"><span>React</span><span>TypeScript</span><span>Responsive UI</span><span>Netlify</span></div>
                 <div class="project-actions"><a class="text-link" href="https://lively-treacle-731271.netlify.app/" target="_blank" rel="noreferrer">Live Demo ↗</a><a class="text-link" href="https://github.com/AtamTristan/freds-futterflitzer" target="_blank" rel="noreferrer">GitHub ↗</a></div>
               </div>
@@ -117,11 +114,11 @@
             <article class="project-card reveal">
               <div class="project-card__visual"><img src="assets/project2.png" alt="Commerce web application preview placeholder" /></div>
               <div class="project-card__body">
-                <div class="project-card__header"><span class="project-index">03</span><span class="project-status">FULL-STACK WEB</span></div>
+                <div class="project-card__header"><span class="project-index">03</span><span class="project-status" data-i18n="commerceStatus">FULL-STACK WEB</span></div>
                 <h3>Commerce Web App</h3>
-                <p class="project-problem"><strong>Problem.</strong> A realistic storefront needs more than UI screens: users, application state, persisted data, routing and checkout have to work together.</p>
-                <p><strong>Built.</strong> A React commerce application with routed product flows, authentication, persistent Firestore data and Stripe-oriented checkout integration.</p>
-                <p class="project-substance"><strong>Engineering.</strong> React Router, Firebase Auth, Firestore and state-management implementations using both Context and Redux.</p>
+                <p class="project-problem" data-i18n-html="commerceProblem"><strong>Problem.</strong> A realistic storefront needs more than UI screens: users, application state, persisted data, routing and checkout have to work together.</p>
+                <p data-i18n-html="commerceBuilt"><strong>Built.</strong> A React commerce application with routed product flows, authentication, persistent Firestore data and Stripe-oriented checkout integration.</p>
+                <p class="project-substance" data-i18n-html="commerceEngineering"><strong>Engineering.</strong> React Router, Firebase Auth, Firestore and state-management implementations using both Context and Redux.</p>
                 <div class="tags"><span>React</span><span>Firebase</span><span>Firestore</span><span>Stripe</span></div>
                 <div class="project-actions"><a class="text-link" href="https://glistening-horse-3c40c7.netlify.app" target="_blank" rel="noreferrer">Live Demo ↗</a><a class="text-link" href="https://github.com/AtamTristan/crwn-clothing" target="_blank" rel="noreferrer">GitHub ↗</a></div>
               </div>
@@ -129,7 +126,7 @@
           </div>
 
           <div class="projects-footer reveal">
-            <p>More code, experiments and earlier projects live on GitHub.</p>
+            <p data-i18n="moreGithub">More code, experiments and earlier projects live on GitHub.</p>
             <a class="text-link" href="https://github.com/AtamTristan" target="_blank" rel="noreferrer">github.com/AtamTristan ↗</a>
           </div>
         </div>
@@ -138,13 +135,13 @@
       <section id="focus" class="section-shell section-shell--dark">
         <div class="container focus-grid">
           <div class="section-heading section-heading--light reveal">
-            <p class="eyebrow">CURRENT FOCUS</p>
-            <h2>Building dependable software across product, data and research.</h2>
+            <p class="eyebrow" data-i18n="focusEyebrow">CURRENT FOCUS</p>
+            <h2 data-i18n="focusTitle">Building dependable software across product, data and research.</h2>
           </div>
           <div class="focus-list reveal">
-            <div><span>01</span><p><strong>Software Engineering</strong> Building maintainable full-stack applications with clear product and architecture decisions.</p></div>
-            <div><span>02</span><p><strong>Research Software</strong> Turning experiments, data pipelines and scientific questions into reproducible software systems.</p></div>
-            <div><span>03</span><p><strong>Data & Algorithms</strong> Applying analytical methods, data processing and algorithms where they make products more useful or technical decisions more precise.</p></div>
+            <div><span>01</span><p data-i18n-html="focus1"><strong>Software Engineering</strong> Building maintainable full-stack applications with clear product and architecture decisions.</p></div>
+            <div><span>02</span><p data-i18n-html="focus2"><strong>Research Software</strong> Turning experiments, data pipelines and scientific questions into reproducible software systems.</p></div>
+            <div><span>03</span><p data-i18n-html="focus3"><strong>Data & Algorithms</strong> Applying analytical methods, data processing and algorithms where they make products more useful or technical decisions more precise.</p></div>
           </div>
         </div>
       </section>
@@ -156,12 +153,9 @@
       -->
       <section id="contact" class="section-shell contact-section">
         <div class="container contact-card reveal">
-          <p class="eyebrow">CONTACT</p>
-          <h2>Interested in working together?</h2>
-          <p>
-            I'm interested in software engineering opportunities where I can contribute across frontend, backend
-            and data, learn from experienced developers and help build useful, maintainable products.
-          </p>
+          <p class="eyebrow" data-i18n="contactEyebrow">CONTACT</p>
+          <h2 data-i18n="contactTitle">Interested in working together?</h2>
+<p data-i18n="contactText">I'm interested in software engineering opportunities where I can contribute across frontend, backend and data, learn from experienced developers and help build useful, maintainable products.</p>
           <div class="contact-actions">
             <a
                     class="button button--primary"
@@ -169,14 +163,14 @@
                     target="_blank"
                     rel="noreferrer"
             >
-              View GitHub
+              <span data-i18n="viewGithub">View GitHub</span>
             </a>
 
             <a
                     class="button button--secondary"
                     href="mailto:tristan.wesendahl@gmail.com?subject=Portfolio%20Contact"
             >
-              Email me
+              <span data-i18n="emailMe">Email me</span>
             </a>
           </div>
         </div>
@@ -186,10 +180,10 @@
     <footer class="site-footer">
       <div class="container site-footer__inner">
         <span>© <span id="year"></span> Tristan Wesendahl Velázquez</span>
-        <nav class="site-footer__links" aria-label="Legal navigation">
-          <a href="imprint.html">Imprint</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="#top">Back to top ↑</a>
+        <nav class="site-footer__links" aria-label="Legal navigation" data-i18n-aria-label="legalNavAria">
+          <a href="imprint.html" data-i18n="imprint">Imprint</a>
+          <a href="privacy.html" data-i18n="privacy">Privacy</a>
+          <a href="#top" data-i18n="backToTop">Back to top ↑</a>
         </nav>
       </div>
     </footer>

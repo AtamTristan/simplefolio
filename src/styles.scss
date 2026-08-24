@@ -191,3 +191,43 @@ img { display: block; max-width: 100%; }
 .legal-back { margin-top: 36px; }
 :focus-visible { outline: 3px solid rgba(37, 94, 232, .35); outline-offset: 3px; border-radius: 4px; }
 @media (max-width: 640px) { .site-footer__links { gap: 14px; } .legal-nav { display: flex; gap: 16px; } .legal-page { padding-top: 52px; } }
+
+
+/* Language switcher */
+.header-actions { display: flex; align-items: center; gap: 24px; }
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, .68);
+}
+
+.language-option {
+  appearance: none;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 7px 8px;
+  font: 700 10px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  letter-spacing: .08em;
+  transition: color .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.language-option:hover { color: var(--ink); }
+
+.language-option.is-active {
+  background: var(--surface);
+  color: var(--accent);
+  box-shadow: 0 1px 5px rgba(17, 24, 39, .08);
+}
+
+@media (max-width: 640px) {
+  .header-actions { gap: 0; }
+  .language-switcher { margin-left: auto; }
+}

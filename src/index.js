@@ -23,6 +23,8 @@ const translations = {
     wildMethods: "Methods: comparison of six language models, distance analysis and PCA visualizations of embedding spaces.",
     wildScope: "The analysis concerns embedding geometry; it does not establish improvements in downstream anomaly detection.",
     wildDownload: "Read seminar paper · PDF · English ↗",
+    wildVisualizationText: "Explore the data interactively in Science Visualizer: compare six language models and seven datasets using 3D PCA projections and distance analyses.",
+    wildVisualization: "Explore interactive visualization ↗",
 
     title: 'Tristan Wesendahl Velázquez | Software Engineer',
     description: 'Portfolio of Tristan Wesendahl Velázquez, a computer science student and software engineer focused on full-stack development, research software and data-driven systems.',
@@ -93,6 +95,8 @@ const translations = {
     wildMethods: "Methoden: Vergleich von sechs Sprachmodellen, Distanzanalysen und PCA-Visualisierungen der Embedding-Räume.",
     wildScope: "Untersucht wird die Geometrie der Embeddings; eine Verbesserung der nachgelagerten Anomalieerkennung wird damit nicht nachgewiesen.",
     wildDownload: "Seminararbeit lesen · PDF · Englisch ↗",
+    wildVisualizationText: "Die Daten im Science Visualizer interaktiv erkunden: sechs Sprachmodelle und sieben Datensätze anhand von 3D-PCA-Projektionen und Distanzanalysen vergleichen.",
+    wildVisualization: "Interaktive Visualisierung öffnen ↗",
 
     title: 'Tristan Wesendahl Velázquez | Softwareentwickler',
     description: 'Portfolio von Tristan Wesendahl Velázquez, Informatikstudent und Softwareentwickler mit Fokus auf Full-Stack-Entwicklung, Forschungssoftware und datengetriebene Systeme.',
@@ -164,6 +168,8 @@ const translations = {
     wildMethods: "Métodos: comparación de seis modelos de lenguaje, análisis de distancias y visualizaciones PCA de los espacios de embeddings.",
     wildScope: "El análisis estudia la geometría de los embeddings; no demuestra mejoras en la detección de anomalías posterior.",
     wildDownload: "Leer trabajo de seminario · PDF · Inglés ↗",
+    wildVisualizationText: "Explora los datos de forma interactiva en Science Visualizer: compara seis modelos de lenguaje y siete conjuntos de datos mediante proyecciones PCA en 3D y análisis de distancias.",
+    wildVisualization: "Explorar visualización interactiva ↗",
 
     title: 'Tristan Wesendahl Velázquez | Ingeniero de Software',
     description: 'Portafolio de Tristan Wesendahl Velázquez, estudiante de informática e ingeniero de software enfocado en desarrollo full-stack, software científico y sistemas basados en datos.',

@@ -25,8 +25,9 @@
         <div class="header-actions">
           <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria-label="primaryNavAria">
             <a href="#about" data-i18n="navAbout">About</a>
+            <a href="#experience" data-i18n="navExperience">Experience</a>
             <a href="#projects" data-i18n="navProjects">Projects</a>
-            <a href="#focus" data-i18n="navFocus">Focus</a>
+            <a href="#research" data-i18n="navResearch">Research</a>
             <a href="#contact" data-i18n="navContact">Contact</a>
           </nav>
           <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="languageAria">
@@ -50,7 +51,7 @@
 <p class="hero__lead" data-i18n="heroLead">I'm Tristan Wesendahl Velázquez, a computer science student and software engineer building full-stack applications, data-driven systems and scientific software.</p>
             <div class="hero__actions">
               <a class="button button--primary" href="#projects" data-i18n="heroProjects">View selected projects</a>
-              <a class="button button--secondary" href="https://github.com/AtamTristan" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button button--secondary" href="/documents/tristan-wesendahl-velazquez-cv-de.pdf" download data-i18n="resumeDownload">Download CV · PDF · German</a>
             </div>
           </div>
         </div>
@@ -73,6 +74,38 @@
               <div><span data-i18n="skillResearch">Research</span><strong>PyTorch · scikit-learn · Data Analysis · ML</strong></div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section-shell">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="experienceEyebrow">EXPERIENCE & EDUCATION</p>
+            <h2 data-i18n="experienceTitle">Practical experience in development and teaching.</h2>
+          </div>
+          <div class="experience-list">
+            <article class="experience-item reveal">
+              <p class="experience-date">04/2026 – 09/2026</p>
+              <div><h3 data-i18n="tutorTitle">Database Systems Tutor</h3><p class="experience-org">Universität Osnabrück</p><p data-i18n="tutorText"></p></div>
+            </article>
+            <article class="experience-item reveal">
+              <p class="experience-date">09/2024 – 09/2025</p>
+              <div><h3 data-i18n="freelanceTitle">Freelance Full-Stack Developer</h3><p class="experience-org">Remote / Osnabrück</p><p data-i18n="freelanceText"></p></div>
+            </article>
+            <article class="experience-item reveal">
+              <p class="experience-date">04/2024 – 09/2025</p>
+              <div><h3 data-i18n="hiwiTitle">Student Software Developer</h3><p class="experience-org">Universität Osnabrück</p><p data-i18n="hiwiText"></p></div>
+            </article>
+            <article class="experience-item reveal">
+              <p class="experience-date">09/2024</p>
+              <div><h3 data-i18n="iotTitle">IoT & Embedded ML Practical Course</h3><p class="experience-org">Universität Osnabrück</p><p data-i18n="iotText"></p></div>
+            </article>
+            <article class="experience-item reveal">
+              <p class="experience-date">10/2020 –</p>
+              <div><h3 data-i18n="studyTitle">B.Sc. Computer Science</h3><p class="experience-org">Universität Osnabrück</p><p data-i18n="studyText"></p></div>
+            </article>
+          </div>
+          <div class="resume-actions reveal"><a class="button button--secondary" href="/documents/tristan-wesendahl-velazquez-cv-de.pdf" download data-i18n="resumeDownload">Download CV · PDF · German</a><p data-i18n="resumeNote">One-page CV. The German PDF is the same in all website languages.</p></div>
         </div>
       </section>
 
@@ -146,11 +179,24 @@
         </div>
       </section>
 
-      <!--
-        Resume / Experience slot intentionally reserved for a future version.
-        Add the section here once the final CV PDF and experience copy are ready,
-        then expose it in the navigation and add a single Resume PDF CTA.
-      -->
+      <section id="research" class="section-shell section-shell--muted">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="researchEyebrow">ACADEMIC WORK</p>
+            <h2 data-i18n="researchTitle">From research questions to empirical analysis.</h2>
+          </div>
+          <article class="research-card reveal">
+            <p class="eyebrow" data-i18n="wildMeta">SEMINAR PAPER · UNIVERSITÄT OSNABRÜCK · 2026</p>
+            <h3>Embedding Space Analysis for Heterogeneous Graph Data: A Study in the Context of Wild-GAD</h3>
+            <p data-i18n="wildText">An empirical comparison of language-model embeddings for heterogeneous graph data in the context of graph anomaly detection.</p>
+            <p data-i18n="wildMethods">Methods: comparison of six language models, distance analysis and PCA visualizations of embedding spaces.</p>
+            <p data-i18n="wildScope">The analysis concerns embedding geometry; it does not establish improvements in downstream anomaly detection.</p>
+            <div class="tags"><span>Python</span><span>Embeddings</span><span>PCA</span><span>Graph Data</span></div>
+            <div class="project-actions"><a class="text-link" href="/documents/wild-gad-embedding-space-analysis.pdf" target="_blank" rel="noopener noreferrer" data-i18n="wildDownload">Read seminar paper · PDF · English ↗</a></div>
+          </article>
+        </div>
+      </section>
+
       <section id="contact" class="section-shell contact-section">
         <div class="container contact-card reveal">
           <p class="eyebrow" data-i18n="contactEyebrow">CONTACT</p>
